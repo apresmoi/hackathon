@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 208 100% 97%; /* #F0F8FF Alice Blue */
+    --foreground: 220 15% 25%; /* Dark Slate Blue-ish */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 15% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 25%;
+    --primary: 197 71% 52%; /* #29ABE2 Vibrant Blue */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 208 100% 90%; /* Lighter Alice Blue / Pale Blue */
+    --secondary-foreground: 197 71% 40%; /* Darker Vibrant Blue */
+    --muted: 208 50% 92%; /* Light Grayish Blue */
+    --muted-foreground: 220 10% 45%; /* Medium Grayish Blue */
+    --accent: 178 60% 57%; /* #48D1CC Cooler Cyan */
+    --accent-foreground: 220 15% 15%; /* Darker text for contrast on cyan */
+    --destructive: 0 72% 51%; /* Standard Destructive Red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 208 50% 88%; /* Light Blue-Gray Border */
+    --input: 208 50% 94%; /* Very Light Blue-Gray Input BG */
+    --ring: 197 71% 52%; /* Primary color for focus rings */
+    --chart-1: 197 71% 52%;
+    --chart-2: 178 60% 57%;
+    --chart-3: 208 100% 80%;
+    --chart-4: 197 50% 70%;
+    --chart-5: 178 40% 70%;
+    --radius: 0.5rem;
+
+    /* Sidebar specific vars - can alias to main theme or customize */
+    --sidebar-background: 208 100% 95%; /* Slightly off main background for definition */
+    --sidebar-foreground: 220 15% 25%;
+    --sidebar-primary: 197 71% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 178 60% 57%;
+    --sidebar-accent-foreground: 220 15% 15%;
+    --sidebar-border: 208 50% 85%;
+    --sidebar-ring: 197 71% 52%;
+  }
+
+  .dark {
+    --background: 220 15% 10%; /* Very Dark Desaturated Blue */
+    --foreground: 208 100% 90%; /* Light Blueish White */
+    --card: 220 15% 15%; /* Slightly Lighter Dark Blue */
+    --card-foreground: 208 100% 90%;
+    --popover: 220 15% 10%;
+    --popover-foreground: 208 100% 90%;
+    --primary: 197 71% 60%; /* Brighter Vibrant Blue for Dark Mode */
+    --primary-foreground: 220 15% 5%; /* Very Dark Blue for text on primary */
+    --secondary: 220 15% 20%; /* Darker Blue-Gray */
+    --secondary-foreground: 208 100% 85%; /* Lighter Blueish White */
+    --muted: 220 15% 22%; /* Dark Muted Blue-Gray */
+    --muted-foreground: 208 50% 65%; /* Medium Light Grayish Blue */
+    --accent: 178 60% 65%; /* Brighter Cyan for Dark Mode */
+    --accent-foreground: 220 15% 5%; /* Very Dark Blue for text on accent */
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 25%; /* Medium Dark Blue-Gray Border */
+    --input: 220 15% 18%; /* Darker Blue-Gray Input BG */
+    --ring: 197 71% 60%;
+    --chart-1: 197 71% 60%;
+    --chart-2: 178 60% 65%;
+    --chart-3: 208 100% 70%;
+    --chart-4: 197 50% 60%;
+    --chart-5: 178 40% 60%;
+
+    --sidebar-background: 220 15% 12%;
+    --sidebar-foreground: 208 100% 90%;
+    --sidebar-primary: 197 71% 60%;
+    --sidebar-primary-foreground: 220 15% 5%;
+    --sidebar-accent: 178 60% 65%;
+    --sidebar-accent-foreground: 220 15% 5%;
+    --sidebar-border: 220 15% 22%;
+    --sidebar-ring: 197 71% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.7);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}

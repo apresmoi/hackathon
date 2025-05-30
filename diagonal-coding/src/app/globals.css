@@ -1,0 +1,115 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 98%; /* Almost White */
+    --foreground: 210 10% 23%; /* Dark Grey-Blue */
+
+    --card: 0 0% 96%; /* Slightly Off-White */
+    --card-foreground: 210 10% 23%; /* Dark Grey-Blue */
+
+    --popover: 0 0% 96%; /* Slightly Off-White */
+    --popover-foreground: 210 10% 23%; /* Dark Grey-Blue */
+
+    --primary: 208 100% 29%; /* Improving Dark Blue #005596 */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 205 63% 55%; /* Improving Light Blue #4597D3 */
+    --secondary-foreground: 208 100% 15%; /* Darker Blue for contrast on light blue */
+
+    --muted: 0 0% 90%; /* Lighter version of Improving Grey */
+    --muted-foreground: 0 0% 40%; /* Darker version of Improving Grey */
+
+    --accent: 43 90% 61%; /* Improving Orange #F5BB41 */
+    --accent-foreground: 0 0% 10%; /* Dark text for contrast on orange */
+
+    --destructive: 0 84.2% 60.2%; /* Standard Red */
+    --destructive-foreground: 0 0% 98%; /* White */
+
+    --border: 0 0% 80%; /* Based on Improving Grey, lighter shade for borders */
+    --input: 0 0% 85%; /* Based on Improving Grey, slightly lighter for input backgrounds */
+    --ring: 208 100% 29%; /* Improving Dark Blue for focus rings */
+
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 208 100% 29%; /* Improving Dark Blue */
+    --chart-2: 205 63% 55%; /* Improving Light Blue */
+    --chart-3: 164 44% 56%; /* Improving Green */
+    --chart-4: 43 90% 61%; /* Improving Orange */
+    --chart-5: 0 0% 66%; /* Improving Grey */
+
+    /* Sidebar specific colors */
+    --sidebar-background: 0 0% 95%; /* Slightly off-main background */
+    --sidebar-foreground: 210 10% 23%; /* Dark Grey-Blue */
+    --sidebar-primary: 208 100% 29%; /* Improving Dark Blue */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 43 90% 61%; /* Improving Orange */
+    --sidebar-accent-foreground: 0 0% 10%; /* Dark text for contrast */
+    --sidebar-border: 0 0% 80%; /* Based on Improving Grey */
+    --sidebar-ring: 208 100% 29%; /* Improving Dark Blue */
+  }
+
+  .dark {
+    --background: 210 30% 12%; /* Very Dark Blue/Grey */
+    --foreground: 210 15% 85%; /* Light Grey/Off-White */
+
+    --card: 210 25% 18%; /* Darker card bg */
+    --card-foreground: 210 15% 85%; /* Light Grey/Off-White */
+
+    --popover: 210 25% 15%; /* Even darker popover */
+    --popover-foreground: 210 15% 85%; /* Light Grey/Off-White */
+
+    --primary: 208 100% 35%; /* Improving Dark Blue #005596 - slightly lighter for dark mode */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 205 63% 45%; /* Improving Light Blue #4597D3 - slightly darker/desaturated */
+    --secondary-foreground: 210 15% 90%; /* Light text */
+
+    --muted: 210 10% 25%; /* Darker Grey */
+    --muted-foreground: 210 10% 65%; /* Lighter Grey */
+
+    --accent: 43 90% 61%; /* Improving Orange #F5BB41 - kept vibrant */
+    --accent-foreground: 0 0% 10%; /* Dark text for contrast */
+
+    --destructive: 0 70% 50%; /* Standard Red, adjusted for dark */
+    --destructive-foreground: 0 0% 98%; /* White */
+
+    --border: 210 10% 30%; /* Mid-dark grey */
+    --input: 210 10% 33%;  /* Mid-dark grey for input */
+    --ring: 208 100% 35%;   /* Improving Dark Blue for focus rings */
+
+    /* Chart colors for dark mode */
+    --chart-1: 208 100% 45%; /* Improving Dark Blue - lighter */
+    --chart-2: 205 63% 65%; /* Improving Light Blue - lighter */
+    --chart-3: 164 44% 66%; /* Improving Green - lighter */
+    --chart-4: 43 90% 61%; /* Improving Orange - vibrant */
+    --chart-5: 0 0% 75%; /* Improving Grey - lighter */
+
+    /* Sidebar specific colors for dark mode */
+    --sidebar-background: 210 30% 10%; /* Darker than main dark bg */
+    --sidebar-foreground: 210 15% 85%; /* Light Grey/Off-White */
+    --sidebar-primary: 208 100% 35%; /* Improving Dark Blue */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 43 90% 61%; /* Improving Orange */
+    --sidebar-accent-foreground: 0 0% 10%; /* Dark text */
+    --sidebar-border: 210 10% 25%; /* Darker Grey */
+    --sidebar-ring: 208 100% 35%; /* Improving Dark Blue */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

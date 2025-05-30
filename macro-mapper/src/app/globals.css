@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 276 50% 95%; /* soft, muted violet */
+    --foreground: 276 30% 20%; /* darker violet for text */
+
+    --card: 276 50% 96%; /* slightly lighter than background for cards */
+    --card-foreground: 276 30% 20%; 
+
+    --popover: 276 50% 93%; 
+    --popover-foreground: 276 30% 20%;
+
+    --primary: 276 87% 53%; /* vivid violet */
+    --primary-foreground: 0 0% 100%; /* white for contrast on primary */
+
+    --secondary: 276 40% 88%; /* lighter violet for secondary elements */
+    --secondary-foreground: 276 30% 20%;
+
+    --muted: 276 40% 90%; /* muted violet */
+    --muted-foreground: 276 25% 45%;
+
+    --accent: 300 100% 27%; /* punchy, dark magenta */
+    --accent-foreground: 0 0% 100%; /* white for contrast on accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 276 30% 80%; 
+    --input: 276 40% 92%; /* input background, slightly different from main bg */
+    --ring: 276 87% 60%; 
+    
+    --radius: 0.5rem;
+
+    --chart-1: 276 87% 53%; /* primary */
+    --chart-2: 300 100% 35%; /* accent variant */
+    --chart-3: 276 60% 65%;
+    --chart-4: 300 70% 45%;
+    --chart-5: 276 40% 75%;
+    
+    --sidebar-background: 276 45% 92%;
+    --sidebar-foreground: 276 30% 20%;
+    --sidebar-primary: 276 87% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 300 100% 27%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 276 30% 75%;
+    --sidebar-ring: 276 87% 60%;
+
+    /* Success Colors */
+    --success-background: 145 60% 92%; /* Light green */
+    --success-foreground: 145 50% 25%; /* Dark green text */
+    --success-border: 145 50% 80%; /* Medium green border */
+
+    /* Warning Colors */
+    --warning-background: 45 100% 92%; /* Light yellow */
+    --warning-foreground: 35 80% 30%; /* Dark orange/brown text */
+    --warning-border: 40 100% 80%; /* Medium yellow/orange border */
+  }
+
+  .dark {
+    --background: 276 15% 10%;
+    --foreground: 276 30% 90%;
+
+    --card: 276 15% 12%; /* Darker card background */
+    --card-foreground: 276 30% 90%;
+
+    --popover: 276 15% 12%;
+    --popover-foreground: 276 30% 90%;
+
+    --primary: 276 87% 60%;
+    --primary-foreground: 276 10% 10%;
+
+    --secondary: 276 20% 25%;
+    --secondary-foreground: 276 30% 90%;
+
+    --muted: 276 20% 20%;
+    --muted-foreground: 276 25% 60%;
+
+    --accent: 300 100% 40%;
+    --accent-foreground: 276 10% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 276 20% 30%;
+    --input: 276 15% 15%; /* Darker input for dark mode */
+    --ring: 276 87% 55%;
+    
+    --chart-1: 276 87% 60%;
+    --chart-2: 300 100% 45%;
+    --chart-3: 276 60% 55%;
+    --chart-4: 300 70% 50%;
+    --chart-5: 276 40% 65%;
+
+    --sidebar-background: 276 12% 8%;
+    --sidebar-foreground: 276 30% 90%;
+    --sidebar-primary: 276 87% 60%;
+    --sidebar-primary-foreground: 276 10% 10%;
+    --sidebar-accent: 300 100% 40%;
+    --sidebar-accent-foreground: 276 10% 10%;
+    --sidebar-border: 276 20% 25%;
+    --sidebar-ring: 276 87% 55%;
+
+    /* Success Colors - Dark Mode */
+    --success-background: 145 40% 18%; 
+    --success-foreground: 145 60% 88%; 
+    --success-border: 145 45% 35%; 
+
+    /* Warning Colors - Dark Mode */
+    --warning-background: 40 60% 22%; 
+    --warning-foreground: 45 100% 88%; 
+    --warning-border: 40 70% 40%; 
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

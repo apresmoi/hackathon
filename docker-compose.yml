@@ -1,0 +1,58 @@
+version: "3"
+services:
+  micro-reminders:
+    build:
+      context: ./micro-reminders
+      dockerfile: Dockerfile
+    container_name: micro-reminders
+    ports:
+      - "9002:9002"
+    environment:
+      - OPENAI_API_KEY=
+    volumes:
+      - ./micro-reminders:/app
+  diagonal-coding:
+    build:
+      context: ./diagonal-coding
+      dockerfile: Dockerfile
+    container_name: diagonal-coding
+    ports:
+      - "9001:9002"
+    environment:
+      - OPENAI_API_KEY=
+  faire-app:
+    build:
+      context: ./faire-app
+      dockerfile: Dockerfile
+    container_name: faire-app
+    ports:
+      - "9000:9002"
+    environment:
+      - OPENAI_API_KEY=
+  ice-breaker-app:
+    build:
+      context: ./ice-breaker-app
+      dockerfile: Dockerfile
+    container_name: ice-breaker-app
+    ports:
+      - "9003:9002"
+    environment:
+      - OPENAI_API_KEY=
+  macro-mapper:
+    build:
+      context: ./macro-mapper
+      dockerfile: Dockerfile
+    container_name: macro-mapper
+    ports:
+      - "9004:9002"
+    environment:
+      - OPENAI_API_KEY=
+  trust-gpt:
+    build:
+      context: ./trust-gpt
+      dockerfile: Dockerfile
+    container_name: trust-gpt
+    ports:
+      - "9005:3000"
+    environment:
+      - OPENAI_API_KEY=
