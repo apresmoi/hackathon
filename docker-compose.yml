@@ -36,15 +36,6 @@ services:
       - "9003:9002"
     environment:
       - OPENAI_API_KEY=
-  macro-mapper:
-    build:
-      context: ./macro-mapper
-      dockerfile: Dockerfile
-    container_name: macro-mapper
-    ports:
-      - "9004:9002"
-    environment:
-      - OPENAI_API_KEY=
   trust-gpt:
     build:
       context: ./trust-gpt

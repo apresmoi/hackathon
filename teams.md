@@ -43,9 +43,9 @@ Integrantes: Gustavo Rojas, Jesus Rojas, Julian Grilli
 
 Team: SMart OS
 App: MacroMapper
-Link: http://18.215.155.25:9004/
+Link: https://fitness-buddy-green.vercel.app
 Github: https://github.com/sunteago/fitness-buddy/
-Integrantes: Oscar Cecilio
+Integrantes: Oscar Cecilio, Santiago Vallejo
 
 
 Team: pollajerIA
