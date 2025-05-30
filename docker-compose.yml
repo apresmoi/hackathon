@@ -54,3 +54,12 @@ services:
       - "9006:4173"
     environment:
       - OPENAI_API_KEY=
+  calm-board:
+    build:
+      context: ./calm-board
+      dockerfile: Dockerfile
+    container_name: calm-board
+    ports:
+      - "9007:3000"
+    environment:
+      - OPENAI_API_KEY=

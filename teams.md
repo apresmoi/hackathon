@@ -52,3 +52,26 @@ Team: pollajerIA
 App: Diagonal Coding
 Link: http://18.215.155.25:9001/
 Github: https://github.com/manuelduran-dev/ImprovingComeTogether
+
+
+
+----- Chile
+
+Team: CodePendientes
+App:
+Link: https://kzmnsvun0zt5s5dt7k8p.lite.vusercontent.net/
+Github: https://github.com/keilermora/water-intake-tracker
+Integrantes: @julio.garcia, @keiler.mora, @jose.garcia
+
+Team: 404 not founders
+App:
+Link: https://v0-404-not-founders.vercel.app/
+Github: https://github.com/nazius/404-not-founders/
+Integrantes: @maryanni.marziliano, @juanpablo.nazar, @anthony.beltran
+
+
+Team: Chigüire AI
+App: Calm Board
+Link: 
+Github: https://github.com/adolfogustavo/v0-basic-react-app
+Integrantes: @daniel.soto, @gustavo.dominguez, @gustavo.leon
