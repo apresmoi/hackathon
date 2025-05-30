@@ -14,6 +14,8 @@ import { ChatHistory } from "@/hooks/atoms";
 import { getActiveOrder, getFinisehdOrder } from "@/lib/lib";
 import "server-only";
 
+const apikey = process.env.OPENAI_API_KEY
+
 /* ------------------------------------------------------------------ */
 /*  Types returned to the client                                      */
 /* ------------------------------------------------------------------ */
@@ -122,7 +124,7 @@ Example (for illustration only):
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer aqui`,
+      Authorization: `Bearer ${apikey}`,
     },
     body: JSON.stringify({
       model: "gpt-4o-mini",
