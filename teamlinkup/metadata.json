@@ -1,0 +1,5 @@
+{
+  "name": "TeamLinkup",
+  "description": "A platform for amateur sports teams to connect, schedule matches, and manage their teams. Users can register, create teams, post match offers, search for opponents, and confirm matches across various sports.",
+  "requestFramePermissions": []
+}

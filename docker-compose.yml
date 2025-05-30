@@ -9,8 +9,6 @@ services:
       - "9002:9002"
     environment:
       - OPENAI_API_KEY=
-    volumes:
-      - ./micro-reminders:/app
   diagonal-coding:
     build:
       context: ./diagonal-coding
@@ -54,5 +52,14 @@ services:
     container_name: trust-gpt
     ports:
       - "9005:3000"
+    environment:
+      - OPENAI_API_KEY=
+  teamlinkup:
+    build:
+      context: ./teamlinkup
+      dockerfile: Dockerfile
+    container_name: teamlinkup
+    ports:
+      - "9006:5173"
     environment:
       - OPENAI_API_KEY=
