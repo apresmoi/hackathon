@@ -15,18 +15,6 @@ let app: FirebaseApp;
 let auth: Auth;
 let db: Firestore;
 
-if (typeof window !== 'undefined' && !getApps().length) {
-  app = initializeApp(firebaseConfig);
-  auth = getAuth(app);
-  db = getFirestore(app);
-} else if (typeof window !== 'undefined') {
-  app = getApp();
-  auth = getAuth(app);
-  db = getFirestore(app);
-} else {
-  // Handle server-side initialization if needed, though client-side is primary for this app
-  // For now, these will be undefined on the server, operations should be client-side or via server actions.
-}
 
 
 export { app, auth, db };
