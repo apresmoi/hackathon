@@ -51,6 +51,6 @@ services:
       dockerfile: Dockerfile
     container_name: teamlinkup
     ports:
-      - "9006:5173"
+      - "9006:4173"
     environment:
       - OPENAI_API_KEY=
