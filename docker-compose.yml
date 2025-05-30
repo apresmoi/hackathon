@@ -63,3 +63,12 @@ services:
       - "9007:3000"
     environment:
       - OPENAI_API_KEY=
+  family-chores:
+    build:
+      context: ./family-chores
+      dockerfile: Dockerfile
+    container_name: family-chores
+    ports:
+      - "9008:3000"
+    environment:
+      - OPENAI_API_KEY=
